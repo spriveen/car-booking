@@ -8,6 +8,7 @@ import "aos/dist/aos.css"
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Navbar from '@/components/Navbar/Navbar';
+import Hero from '@/components/Hero/Hero';
 
 const Page = () => {
   useEffect(() => {
@@ -23,6 +24,7 @@ const Page = () => {
   return (
     <div>
       <Navbar/>
+      <Hero />
     </div>
   );
 };
