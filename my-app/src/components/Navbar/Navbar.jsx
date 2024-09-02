@@ -1,5 +1,7 @@
-import Link from 'next/link';
 import React from 'react';
+import Link from 'next/link';
+import DarkMode from '../DarkMode';
+import { HiMenuAlt3, HiMenuAlt1 } from 'react-icons/hi';
 
 const Navlinks = [
   { id: 1, name: 'Home', link: '/' },
@@ -23,13 +25,24 @@ const Navbar = () => {
           <div className='hidden md:block'>
             <ul className='flex items-center gap-6'>
               {Navlinks.map(({ id, name, link }) => (
-                <li key={id} className="">
-                  <Link href={link} className=''>
+                <li key={id} className="py-4">
+                  <Link href={link} className={`text-lg
+                    font-medium text-black dark:text-white
+                    py-2 px-4 rounded-full
+                    hover:bg-primary duration-300`}>
                     {name}
                   </Link>
                 </li>
               ))}
+              {/* Dark Mode feature implement */}
+              <DarkMode />
             </ul>
+          </div>
+          {/* Mobile Menu Section */}
+          <div className='md:hidden flex items-center
+          gap-4'>
+            <DarkMode />
+            <HiMenuAlt1 />
           </div>
         </div>
       </div>
