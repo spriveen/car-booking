@@ -2,6 +2,7 @@ import React from 'react';
 import Link from 'next/link';
 import DarkMode from '../DarkMode';
 import { HiMenuAlt3, HiMenuAlt1 } from 'react-icons/hi';
+import ResponsiveMenu from './ResponsiveMenu';
 
 const Navlinks = [
   { id: 1, name: 'Home', link: '/' },
@@ -12,8 +13,17 @@ const Navlinks = [
 ];
 
 const Navbar = () => {
+
+
+  const [showMenu, setShowMenu] = React.useState(false);
+  const toggleMenu = () =>{
+    setShowMenu(!showMenu);
+  };
+
+
   return (
-    <nav className='relative z-10 shadow-md w-full dark:bg-dark dark:text-white duration-300'>
+    <nav className='relative z-10 shadow-md w-full
+     dark:bg-dark dark:text-white duration-300'>
       <div className='container py-2 md:py-0'>
         <div className='flex items-center justify-between'>
           {/* Logo section */}
@@ -42,10 +52,26 @@ const Navbar = () => {
           <div className='md:hidden flex items-center
           gap-4'>
             <DarkMode />
-            <HiMenuAlt1 />
-          </div>
+            {
+  showMenu ? (
+    <HiMenuAlt1
+    onClick={toggleMenu} 
+    className="cursor-pointer transition-all"
+    size={30}
+    />
+    
+  ) : (
+    <HiMenuAlt3
+      onClick={toggleMenu}
+      className="cursor-pointer transition-all"
+      size={30}
+    />
+  )
+}
+            </div>
         </div>
       </div>
+      <ResponsiveMenu showMenu={showMenu}/>
     </nav>
   );
 }
