@@ -12,6 +12,8 @@ import Hero from '@/components/Hero/Hero';
 import Contact from '@/components/Contact/Contact';
 import BestCabs from '@/components/BestCabs/BestCabs';
 import About from '@/components/About/About';
+import AppStore from '@/components/AppStore/AppStore';
+import Testimonial from '@/components/Testimonial/Testimonial';
 
 const Page = () => {
   useEffect(() => {
@@ -31,6 +33,8 @@ const Page = () => {
       <Contact />
        <BestCabs />
        <About />
+       <AppStore />
+       <Testimonial />
        </div> 
      
   );
