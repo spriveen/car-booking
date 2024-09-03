@@ -28,8 +28,9 @@ const Page = () => {
     dark:text-white'>
       <Hero />
       <Contact />
-      
-    </div>
+       <BestCabs />
+       </div> 
+     
   );
 };
 
