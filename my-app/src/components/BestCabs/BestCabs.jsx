@@ -4,7 +4,7 @@ import Image from 'next/image'
 
 const BestCabs = () => {
   return (
-    <div>Best Cabs</div>
+    <div className='h-10 w-10'>Best Cabs</div>
   ) 
 }
 
