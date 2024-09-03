@@ -10,6 +10,7 @@ import "slick-carousel/slick/slick-theme.css";
 import Navbar from '@/components/Navbar/Navbar';
 import Hero from '@/components/Hero/Hero';
 import Contact from '@/components/Contact/Contact';
+import BestCabs from '@/components/BestCabs/BestCabs';
 
 const Page = () => {
   useEffect(() => {
@@ -27,6 +28,7 @@ const Page = () => {
     dark:text-white'>
       <Hero />
       <Contact />
+      
     </div>
   );
 };
