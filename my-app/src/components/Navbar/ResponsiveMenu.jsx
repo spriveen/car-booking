@@ -35,8 +35,8 @@ const ResponsiveMenu = ({ showMenu }) => {
       {/* bottom footer section */}
       <div>
         <h1>
-        Made With by 💛 <a href="https://Riveen Peanuka.
-        "> Riveen</a>{}
+        Made With by 🦂 <a href="https://Riveen Peanuka.
+        "> Riveen_Official</a>{}
         </h1>
       </div>
     </div>

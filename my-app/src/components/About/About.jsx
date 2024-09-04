@@ -5,7 +5,7 @@ import { SlStar } from "react-icons/sl";
 
 const About = () => {
   const bgStyle = {
-    backgroundImage: `url('/assets/girl.jpg')`, // Correct path for image in the public folder
+    backgroundImage: "url('/assets/girl.jpg')", // Correct path for image in the public folder
     backgroundSize: "cover",
     backgroundPosition: "center",
     backgroundRepeat: "no-repeat",
@@ -20,7 +20,10 @@ const About = () => {
           {/* Header title section */}
           <div className='space-y-3 uppercase text-center
            py-14'>
-            <p className='text-primary text-2xl font-semibold'> 
+            <p 
+            data-aos="fade-up"
+            className='text-primary text-2xl font-semibold'
+            > 
               We do Best
             </p>
             <h1
@@ -30,32 +33,34 @@ const About = () => {
             >
             Than You Wish
             </h1>
-            
-          </div>
-
-          {/* Card Sections */}
-          <div className='grid grid-cols-1 sm:grid-cols-2 gap-8'>
+            </div>
+     {/* Card Sections */}
+          <div 
+          data-aos="fade-up"
+          data-aos-delay="500"
+   className='grid grid-cols-1 
+   sm:grid-cols-2 gap-8'>
             <div className='space-y-8'>
               <BannerCard
                 title={"Fast Booking"}
-                description={"lorem ipsum dolor amet consecture"}
+                description={"Easily book a cab with CabHub for quick and reliable service."}
                 icon={<SlStar />}
               />
               <BannerCard
                 title={"Best Service"}
-                description={"lorem ipsum dolor amet consecture"}
+                description={"Experience top-notch cab services with CabHub, ensuring comfort and safety."}
                 icon={<SlStar />}
               />
             </div> 
             <div className='space-y-8'>
               <BannerCard
                 title={"Quality Experience"}
-                description={"lorem ipsum dolor amet consecture"}
+                description={"Enjoy a seamless and comfortable ride every time with CabHub."}
                 icon={<SlStar />}
               />
               <BannerCard
                 title={"Customer Support"}
-                description={"lorem ipsum dolor amet consecture"}
+                description={"Get 24/7 assistance with CabHub’s reliable customer support team."}
                 icon={<SlStar />}
               />
             </div> 

@@ -7,13 +7,13 @@ import "aos/dist/aos.css"
 // Import css files
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import Navbar from '@/components/Navbar/Navbar';
 import Hero from '@/components/Hero/Hero';
 import Contact from '@/components/Contact/Contact';
 import BestCabs from '@/components/BestCabs/BestCabs';
 import About from '@/components/About/About';
 import AppStore from '@/components/AppStore/AppStore';
 import Testimonial from '@/components/Testimonial/Testimonial';
+import Footer from '@/components/Footer/Footer';
 
 const Page = () => {
   useEffect(() => {
@@ -35,6 +35,7 @@ const Page = () => {
        <About />
        <AppStore />
        <Testimonial />
+       
        </div> 
      
   );
